@@ -1,4 +1,3 @@
-import 'dart:ui';
 import 'package:flutter/material.dart';
 import '../Theme/theme_provider.dart';
 
@@ -37,7 +36,7 @@ class RadiusFlatButtonWidget extends StatelessWidget {
   }) : super(key: key);
 
   @override
-  Widget build(BuildContext context) => FlatButton(
+  Widget build(BuildContext context) => MaterialButton(
         color: AppThemeData().redColor,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(18.0),
@@ -99,7 +98,7 @@ class MinButtonWidget extends StatelessWidget {
   }) : super(key: key);
 
   @override
-  Widget build(BuildContext context) => FlatButton(
+  Widget build(BuildContext context) => MaterialButton(
         color: color,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(10.0),
